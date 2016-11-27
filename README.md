@@ -8,8 +8,8 @@ An extendable micro-service endpoint/worker framework using zero-mq. Includes ht
 - Clone this repo, navigate to it: `cd ruglib`
 
 #### Managing Local Dev with Make and Docker Compose
-- `make build_rugs` To Build rugs Container
-- `make up_local` To start Local Dev ENV
+- `$ make build_rugs` To Build rugs Container
+- `$ make up_local` To start Local Dev ENV
 
 #### Logger Demo
 URI Breakdown `/<topic>/<method>`
@@ -44,4 +44,4 @@ $ curl -X POST -H "Content-Type: application/json" \
   -d '{"text":"MAKE ME QUIETER"}'
 ```
 
-- `make down` To shutdown your Local Dev ENV
+- `$ make down` To shutdown your Local Dev ENV
