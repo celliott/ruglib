@@ -3,7 +3,6 @@
 import json, os
 from ruglib import RugPub
 
-
 zmq_address = "tcp://{zmq_host}:{zmq_port}".format(
   zmq_host=os.getenv('ZMQ_HOST', '*'),
   zmq_port=os.getenv('ZMQ_PORT', 5570))

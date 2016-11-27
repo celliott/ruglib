@@ -1,6 +1,6 @@
 # ruglib
 
-Because rugs tie the room together.
+An extendable micro-service endpoint/worker framework using zero-mq. Includes http endpoint and example logger worker.
 
 ### Project setup
 - Requires Docker and Docker Compose
@@ -18,30 +18,30 @@ URI Breakdown `/<topic>/<method>`
 
 To Capitalize Text
 ```sh
-curl -X POST -H "Content-Type: application/json" \
-	-u admin:zer0 http://localhost/logger/capitalize \
-	-d '{"text":"make me capitol"}'
+$ curl -X POST -H "Content-Type: application/json" \
+  -u admin:zer0 http://localhost/logger/capitalize \
+  -d '{"text":"make me capitol"}'
 ```
 
-To Uppercase Text	
+To Uppercase Text 
 ```sh
-curl -X POST -H "Content-Type: application/json" \
-	-u admin:zer0 http://localhost/logger/upper \
-	-d '{"text":"make me louder"}'
+$ curl -X POST -H "Content-Type: application/json" \
+  -u admin:zer0 http://localhost/logger/upper \
+  -d '{"text":"make me louder"}'
 ```
 
 To Titlecase Text
 ```sh
-curl -X POST -H "Content-Type: application/json" \
-	-u admin:zer0 http://localhost/logger/title \
-	-d '{"text":"title me"}'
+$ curl -X POST -H "Content-Type: application/json" \
+  -u admin:zer0 http://localhost/logger/title \
+  -d '{"text":"title me"}'
 ```
 
 To Lowercase Text
 ```sh
-curl -X POST -H "Content-Type: application/json" \
-	-u admin:zer0 http://localhost/logger/lower \
-	-d '{"text":"MAKE ME QUIETER"}'
+$ curl -X POST -H "Content-Type: application/json" \
+  -u admin:zer0 http://localhost/logger/lower \
+  -d '{"text":"MAKE ME QUIETER"}'
 ```
 
 - `make down` To shutdown your Local Dev ENV

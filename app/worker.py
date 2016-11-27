@@ -3,10 +3,10 @@
 import json, os
 from ruglib import RugSub
 
-name = "worker_{}".format(os.getenv('MODULE'))
-module = __import__(name)
+module_name = "worker_{}".format(os.getenv('MODULE'))
+module = __import__(module_name)
 
-print("{} loaded!".format(name))
+print("{} loaded!".format(module_name))
 
 topic = os.getenv('TOPIC', 'main')
 zmq_address = "tcp://{zmq_host}:{zmq_port}".format(

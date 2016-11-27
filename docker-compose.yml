@@ -13,11 +13,7 @@ services:
     build: ./docker/rugs
     image: rugs-app:0.0.1
     container_name: rugs_endpoint_http
-<<<<<<< HEAD
     command: ./endpoint_http.py
-=======
-    command: /app/endpoint_http.py
->>>>>>> 9bbae51d2b1446c37d434931696571cb91540c2a
     tty: true
     volumes:
       - ./app:/app
@@ -28,11 +24,7 @@ services:
     build: ./docker/rugs
     image: rugs-app:0.0.1
     container_name: rugs_worker_logger
-<<<<<<< HEAD
     command: ./worker.py
-=======
-    command: /app/worker_logger.py
->>>>>>> 9bbae51d2b1446c37d434931696571cb91540c2a
     tty: true
     volumes:
       - ./app:/app

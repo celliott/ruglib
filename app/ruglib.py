@@ -2,7 +2,6 @@
 
 import zmq, json, os
 
-
 class RugPub:
   def __init__(self, address):
     context = zmq.Context()

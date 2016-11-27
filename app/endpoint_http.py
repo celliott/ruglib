@@ -3,7 +3,6 @@
 import endpoint, json, os, flask
 from flask import Flask, request
 
-
 app = Flask(__name__)
 
 @app.route("/<topic>/<method>", methods=['POST', 'GET'])
